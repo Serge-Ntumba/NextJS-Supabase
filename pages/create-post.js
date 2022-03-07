@@ -17,6 +17,8 @@ function CreatePost() {
   function onChange(e) {
     setPost(() => ({ ...post, [e.target.name]: e.target.value }));
   }
+
+  // creating and adding new post to supabase
   async function createNewPost() {
     if (!title || !content) return;
     const user = supabase.auth.user();
