@@ -37,6 +37,11 @@ function MyApp({ Component, pageProps }) {
             <span className="mr-6 cursor-pointer">Create Post</span>
           </Link>
         )}
+        {user && (
+          <Link href="/my-posts">
+            <span className="mr-6 cursor-pointer">My Posts</span>
+          </Link>
+        )}
         <Link href="/profile">
           <span className="mr-6 cursor-pointer">Profile</span>
         </Link>
